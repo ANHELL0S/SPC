@@ -155,14 +155,14 @@ npm install
 
 5. **Credenciales de PGadmin4**
 
-   - **Usuario:** aangelogarcia2021@gmail.com
-   - **Contraseña:** Shouko2021@
+   - **Usuario:** 
+   - **Contraseña:** 
 
 6. **Configuración de PostgreSQL**
 
    - **IP:** 0.0.0.0
-   - **Usuario:** angelo
-   - **Contraseña:** angelo
+   - **Usuario:** 
+   - **Contraseña:**
 
 7. **Credenciales admin SPC**
 
@@ -555,7 +555,7 @@ sudo systemctl restart nginx
 ## 7. Conectar a la VPS
 
 - **vps:** ssh root@34.45.113.147
-- **_password:_** ueb2024\*\*
+- **password:**
 
 neofetch
 
