@@ -1,0 +1,23 @@
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
+export const AUTH_API_URL = `${API_BASE_URL}/auth`
+export const TAGS_API_URL = `${API_BASE_URL}/tags`
+export const USERS_API_URL = `${API_BASE_URL}/users`
+export const REVIEW_API_URL = `${API_BASE_URL}/review`
+export const FACULTY_API_URL = `${API_BASE_URL}/faculty`
+export const DB_INDEX_API_URL = `${API_BASE_URL}/db-index`
+export const CONFIGS_API_URL = `${API_BASE_URL}/configs`
+export const ARTICLE_API_URL = `${API_BASE_URL}/articles`
+export const TEMPLATE_API_URL = `${API_BASE_URL}/template`
+export const COMMENTS_API_URL = `${API_BASE_URL}/comments`
+export const PARAMETER_API_URL = `${API_BASE_URL}/parameter`
+export const MOVEMENTS_API_URL = `${API_BASE_URL}/movements`
+export const CATEGORIES_API_URL = `${API_BASE_URL}/categories`
+export const MAGAZINE_API_URL = `${API_BASE_URL}/magazine`
+export const CAREER_API_URL = `${API_BASE_URL}/career`
+export const LINE_RESEARCH_API_URL = `${API_BASE_URL}/line-research`
+export const FIELD_DEPENDENCE_API_URL = `${API_BASE_URL}/field-dependence`
+export const FIELD_DETAILED_API_URL = `${API_BASE_URL}/field-detailed`
+export const FIELD_SPECIFIC_API_URL = `${API_BASE_URL}/field-specific`
+export const FIELD_WIDE_API_URL = `${API_BASE_URL}/field-wide`
+export const COLLECTION_ARTICLE_API_URL = `${API_BASE_URL}/collection-article`
