@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  spc-ueb-app1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spc-ueb-app_1:latest
+    container_name: spc-ueb-app_1
+    environment:
+      - DB_HOST=dpg-cpecfp7109ks73etn690-a.oregon-postgres.render.com
+      - DB_PORT=5432
+      - DB_NAME=spc_ueb
+      - DB_USER=angelo
+      - DB_PASSWORD=to2uuKzsD4Ua88kfKCYItHKrkqX3c7TQ
+      - PORT=3000
+      - URL_API=http://localhost:3000
+      - CORS_ORIGIN=http://localhost:5173
+      - JWT_SECRET=9ef0f6760e28d0f6443c4f72a4eea140
+      - SMTP_HOST=smtp1.s.ipzmarketing.com
+      - SMTP_PORT=587
+      - SMTP_USER=qxwmbbwwvomv
+      - SMTP_PASS=m9K4wYf2-9E
+      - DEFAULT_FROM_EMAIL=no-reply@devsoftec.com
+      - NODE_ENV=production
+    ports:
+      - '3001:3000'
+    restart: always
+    networks:
+      - app-network
+
+  pm2-commands-app1:
+    image: spc-ueb-app_1:latest
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    depends_on:
+      - spc-ueb-app1
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
